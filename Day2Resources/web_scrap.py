@@ -8,5 +8,3 @@ requestObj.raise_for_status()
 soup = bs4.BeautifulSoup(requestObj.text, 'html.parser')
 elements = soup.select("#product-price-25991")
 print(elements[0].text)
-
-
